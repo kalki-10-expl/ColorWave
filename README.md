@@ -801,6 +801,29 @@ model:
 training:
   epochs: 200
   batch_size: 4
+
+User Journey Example: 
+1.	Launch App: 
+    Start with streamlit run webapp/app.py (local or Docker). 
+
+2.	Upload SAR Image(s): 
+    Drag and drop files onto upload panel. 
+
+3.	Select Model and Processing Settings: 
+    Pick from trained models, set normalization/tile size/post-processing parameters. 
+
+4.	Start Inference: 
+    Click “Run Colorization” for batch or single-image inference. 
+
+5.	View Results: 
+    Results section displays the processed image and its colored optical output, optionally alongside ground truth for validation. 
+
+6.	Download Outputs: 
+    Export processed results as PNG/GeoTIFF, complete with geospatial metadata. 
+
+7.	Review History: 
+    Browse previous tasks, re-download files, or compare processing configurations. 
+
 ```
 
 2. **Start adversarial training**
