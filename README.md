@@ -760,15 +760,21 @@ experiment:
   name: "sar_colorization_supervised"
   seed: 42
 
-model:
-  type: "unet"
-  features: [64, 128, 256, 512]
-  use_attention: true
-
-training:
-  epochs: 100
-  batch_size: 8
-  learning_rate: 0.0001
+model: 
+  type: unet 
+  features: [64, 128, 256, 512] 
+  use_attention: true 
+training: 
+  epochs: 100 
+  batch_size: 8 
+  learning_rate: 0.0001 
+  optimizer: adam 
+  scheduler: cosine 
+loss: 
+  l1_weight: 1.0 
+  ssim_weight: 0.5 
+  perceptual_weight: 0.2 
+  adversarial_weight: 0.1 
 ```
 
 2. **Start training**
