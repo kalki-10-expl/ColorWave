@@ -816,7 +816,7 @@ User Journey Example:
     Click “Run Colorization” for batch or single-image inference. 
 
 5.	View Results: 
-    Results section displays the processed image and its colored optical output, optionally alongside ground truth for validation. 
+    Results section displays the processed image and colored optical output, optionally alongside ground truth for validation. 
 
 6.	Download Outputs: 
     Export processed results as PNG/GeoTIFF, complete with geospatial metadata. 
